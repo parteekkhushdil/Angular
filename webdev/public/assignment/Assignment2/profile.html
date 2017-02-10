@@ -9,11 +9,68 @@
 </head>
 <body>
 <nav class="navbar navbar-inverse">
-    <ul class="nav navbar-nav">
-        <li><a href="#">Profile</a></li>
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">Profile</a>
+        </div>
 
-    </ul>
-    <p class="navbar-text">Some text</p>
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href="#"><span class="glyphicon glyphicon-check "></span></a></li>
+
+        </ul>
+    </div>
 </nav>
+<div class="container">
+
+        <div class="form-group">
+            <label for="username">Username</label>
+            <input type="text" class="form-control" id="username">
+        </div>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="password" class="form-control" id="email">
+        </div>
+        <div class="form-group">
+            <label for="firstname">Firstname</label>
+            <input type="text" class="form-control" id="firstname">
+        </div>
+        <div class="form-group">
+            <label for="lastname">Lastname</label>
+            <input type="text" class="form-control" id="lastname">
+        </div>
+
+    </form>
+    <a class="btn btn-primary btn-block"
+       href="website-list.html">Websites</a>
+    <a class="btn btn-danger  btn-block"
+       href="login.html">Logout</a>
+    <nav class="navbar navbar-default navbar-fixed-bottom">
+        <div class="container">
+            <div class="row navbar-text">
+                <div class="col-xs-3 text-center">
+                    <a href="#">
+                        <span class="glyphicon glyphicon-ok"></span>
+                    </a>
+                </div>
+                <div class="col-xs-3 text-center">
+                    <a href="#">
+                        <span class="glyphicon glyphicon-plus"></span>
+                    </a>
+                </div>
+                <div class="col-xs-3 text-center">
+                    <a href="#">
+                        <span class="glyphicon glyphicon-star"></span>
+                    </a>
+                </div>
+                <div class="col-xs-3 text-center">
+                    <a href="#">
+                        <span class="glyphicon glyphicon-heart"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+</div>
 </body>
 </html>
