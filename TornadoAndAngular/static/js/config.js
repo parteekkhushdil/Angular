@@ -5,12 +5,17 @@
     myApp.config(function ($routeProvider) {
         $routeProvider
             .when('/', {
-                templateUrl: '/static/views/main.html',
-                controller: 'mainController'
+                templateUrl: '/static/views/login.html',
+                controller: 'loginController'
             })
-            .when('/second', {
-                templateUrl: '/static/views/second.html',
-                controller: 'secondController'
+            .when('/register', {
+                templateUrl: '/static/views/register.html',
+                controller: 'registerController'
             })
+            .when('/home', {
+                templateUrl: '/static/views/home.html',
+                controller: 'homeController'
+            })
+            .otherwise({ redirectTo: '/' });
     });
 })();

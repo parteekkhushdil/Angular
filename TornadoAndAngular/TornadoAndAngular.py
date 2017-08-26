@@ -2,11 +2,14 @@ import Settings
 import tornado.web
 import tornado.httpserver
 from Handler.MainHandler import MainHandler
+from Handler.AjaxHandler import AjaxHandler
 
 class Application(tornado.web.Application):
     def __init__(self):
         handlers = [
-            (r"/", MainHandler)
+            (r"/", MainHandler),
+            (r"/ajax/", AjaxHandler)
+
         ]
         settings = {
             "template_path": Settings.TEMPLATE_PATH,

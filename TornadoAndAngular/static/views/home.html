@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+You logged in
+<table>
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Username</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Password</th>
+        </tr>
+    </thead>
+    <tbody>
+    <tr ng-repeat="item in users">
+        <td ng-repeat="x in item">{{ x }}</td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>
